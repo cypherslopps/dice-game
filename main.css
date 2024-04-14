@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(243, 230, 230, 0.49);
+}
+
+.dice-container {
+    display: flex;
+    column-gap: .5rem;
+}
+
+.dice-card {
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid #000;
+}
+
+.dice-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dice-card.disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+}
